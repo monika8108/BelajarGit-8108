@@ -1,5 +1,7 @@
 <?php
 
+// comment comment comment
+// belajar
 require_once('lib/DBClass.php');
 require_once('lib/m_siswa.php');
 
