@@ -3,16 +3,16 @@
 require_once('lib/DBClass.php');
 require_once('lib/m_siswa.php');
 
-$id = $_GET['id'];
+$id = $_GET{'id'};
 
 if(!is_numeric($id)){
 	exit('Access Forbiden');
 }
-
 $siswa = new Siswa();
 $data = $siswa->readSiswa($id);
 
 $dt = $data[0];
+
 ?>
 
 <table border="1">
@@ -31,3 +31,6 @@ $dt = $data[0];
 </table>
 <br />
 <a href="siswa.php">Kembali</a>
+
+
+
